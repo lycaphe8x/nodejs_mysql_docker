@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Danh sách sách</title>
+</head>
+<body>
+<h1>Danh sách 10 cuốn sách đầu tiên</h1>
+<ul>
+  <% books.forEach(function(book) { %>
+    <li>ID: <%= book.id %>, Tên: <%= book.title %>, Tác giả: <%= book.author %></li>
+  <% }); %>
+</ul>
+</body>
+</html>
